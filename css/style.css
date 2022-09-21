@@ -30,6 +30,15 @@ main {
     background-color: red;
 }
 
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* VARIABLES */
 :root {
     /* colors */
@@ -50,6 +59,10 @@ main {
     flex-direction: column;
     background-color: black;
     color: white;
+}
+
+#logo {
+    width: 60%;
 }
 
 .sidebar-section ul li img {
@@ -79,15 +92,53 @@ main {
     height: 20px;
 }
 
-.install-and-profile {
-    display: flex;
-    justify-content: flex-end;
+.sidebar-section .playlist-nav {
+    flex-grow: 1;
+}
+
+.sidebar-section .profile-name {
+    display: inline-block;
 }
 
 /* Main-Section */
 .main-section {
     width: 80%;
     background-color: var(--primary);
+    color: white;
+    overflow: scroll;
+}
+
+.main-head {
+    height: 80px;
+    width: 100%;
+    background-color: #080b12;
+    position: fixed;
+    z-index: 999;
+}
+
+.main-head a {
+    color: white;
+}
+
+.main-section-nav ul {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-section-nav ul li {
+    color: var(--main-grey);
+    padding: 0 .5rem;
+}
+
+/* Recently-section */
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recently-section .cards {
+    width: calc(90% / 6);
 }
 
 /* FOOTER */
