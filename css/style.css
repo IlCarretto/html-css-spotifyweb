@@ -11,9 +11,21 @@ html {
     font-size: 100%;
 }
 
-.webapp {
+.webapp-container {
     height: calc(100vh - 80px);
 
     /* DEBUG */
     background-color: red;
+}
+
+/* VARIABLES */
+:root {
+    /* colors */
+    --primary: #141922;
+    --footer: #282828;
+    --main-grey: #6e7176;
+    --sidebar-grey: #646464;
+    --line: #adff2f;
+
+    --mt-1: 2rem;
 }
