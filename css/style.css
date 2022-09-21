@@ -10,3 +10,10 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-size: 100%;
 }
+
+.webapp {
+    height: calc(100vh - 80px);
+
+    /* DEBUG */
+    background-color: red;
+}
