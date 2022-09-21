@@ -12,8 +12,12 @@ html {
 }
 
 .webapp-container {
-    height: calc(100vh - 80px);
+    width: 100%;
+    height: 100vh;
+}
 
+main {
+    height: calc(100vh - 80px);
     /* DEBUG */
     background-color: red;
 }
