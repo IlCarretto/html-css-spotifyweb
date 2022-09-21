@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;;
+}
+
 /* COMMON */
 html {
     font-family: 'Montserrat', sans-serif;
@@ -14,6 +18,10 @@ html {
 .webapp-container {
     width: 100%;
     height: 100vh;
+}
+
+.flex-container {
+    display: flex;
 }
 
 main {
@@ -32,4 +40,58 @@ main {
     --line: #adff2f;
 
     --mt-1: 2rem;
+}
+
+/* MAIN */
+/* Sidebar Section */
+.sidebar-section {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.sidebar-section ul li img {
+    width: 10%;
+    filter: grayscale(1);
+}
+
+.sidebar-section .new-playlist .square {
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-grey);
+    display: inline-block;
+    position: relative;
+}
+
+.sidebar-section .new-playlist i {
+    font-size: 1rem;
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+}
+
+.sidebar-section .install-and-profile img {
+    height: 20px;
+}
+
+.install-and-profile {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Main-Section */
+.main-section {
+    width: 80%;
+    background-color: var(--primary);
+}
+
+/* FOOTER */
+footer {
+    height: 80px;
+    background-color: var(--footer);
 }
