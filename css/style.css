@@ -55,7 +55,7 @@ a {
     /* colors */
     --primary: #141922;
     --footer: #282828;
-    --main-grey: #6e7176;
+    --main-grey: #787b7f;
     --sidebar-grey: #646464;
     --line: #adff2f;
 
@@ -219,11 +219,12 @@ a {
 
 .category-title {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
 }
 
-.recently-section .category-title:not(:first-child) {
-    margin-top: 5rem;
+.recently-section .category-title {
+    margin-top: 0;
 }
 
 .cards .text-content {
@@ -240,6 +241,7 @@ a {
     color: var(--main-grey);
 }
 
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -248,6 +250,7 @@ a {
 .cards {
     width: calc(100% / 6 - 1rem);
     margin-right: 1rem;
+    margin-top: .5rem;
 }
 
 /* Recently-section */
@@ -332,15 +335,32 @@ footer .current-song img {
         width: calc(100% - 50px);
     }
 
-    .sidebar-section *:not(:last-child){
+    .sidebar-section > *:not(:last-child){
         display: none;
     }
 
     .sidebar-mobile {
+        height: 100%;
+        padding: .3rem 0;
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .icons-1, .icons-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar-mobile #logo-small {
+        width: 30px;
+        opacity: 1;
     }
 
     .sidebar-mobile img {
-        width: 30px;
+        width: 20px;
+        padding: .3rem 0;
+        opacity: .5;
     }
 }
