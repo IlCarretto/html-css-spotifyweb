@@ -224,7 +224,25 @@ a {
     padding: 0 0 .5rem 2rem;
     font-size: .8rem;
     font-weight: 600;
+    position: relative;
 }
+
+.main-section-nav ul li:hover {
+    color: white;
+}
+
+.main-section-nav ul li:first-child::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left: 65px;
+    border-radius: 20px;
+}
+
+
 
 .category-title {
     font-size: 1.2rem;
@@ -242,7 +260,7 @@ a {
 
 .song-title {
     font-size: 1rem;
-    margin-bottom: var(--mb-0-5);
+    margin: .5rem 0;
 }
 
 .song-subtitle {
@@ -260,6 +278,51 @@ a {
     width: calc(100% / 6 - 1rem);
     margin-right: 1rem;
     margin-top: .5rem;
+}
+
+/* Hover & animations */
+.img-content {
+    position: relative;
+}
+
+.img-content i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    display: none;
+}
+
+.img-content:hover i{
+    display: block;
+    cursor: pointer;
+}
+
+.img-content:hover img{
+    opacity: .5;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.new-playlist:hover .square {
+    background-color: white;
+}
+
+.new-playlist:hover h3 {
+    color: white;
+}
+
+.icon-big:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 /* Recently-section */
@@ -364,6 +427,33 @@ footer .current-song img {
 
 .small-length {
     width: 100px;
+    position: relative;
+}
+
+.small-length::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    left: 30px;
+    top: -3px;
+}
+
+.large-length::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    left: 70px;
+    top: -3px;
+}
+
+.current-length:hover {
+    background-color: lime;
 }
 
 /* Audio Settings */
