@@ -61,6 +61,7 @@ a {
     flex-direction: column;
     background-color: black;
     color: white;
+    padding: 1rem;
 }
 
 #logo {
@@ -69,7 +70,6 @@ a {
 
 .sidebar-section ul li img {
     width: 10%;
-    filter: grayscale(1);
 }
 
 .sidebar-section .new-playlist .square {
@@ -162,7 +162,7 @@ a {
 /* Popular Artists */
 .popular-artists .cards {
     width: calc(100% / 6 - 1rem);
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 .popular-artists .img-content {
@@ -185,9 +185,18 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 footer .current-song img {
     width: 50px;
     align-self: flex-start;
+}
+
+/* MEDIA QUERY */
+/* Layout Desktop Small (1100px) */
+@media screen and (max-width: 1100px) {
+    .recently-section .cards {
+        width: calc(100% / 4 - 1rem);
+    }
 }
