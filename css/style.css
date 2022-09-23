@@ -393,7 +393,9 @@ footer .current-song img {
 }
 
 .song-length {
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -408,6 +410,7 @@ footer .current-song img {
     background-color: white;
     border-radius: 30px;
     position: relative;
+    flex-grow: 1;
 }
 
 .left-length {
@@ -448,7 +451,7 @@ footer .current-song img {
     background-color: white;
     border-radius: 30px;
     position: absolute;
-    left: 70px;
+    left: 200px;
     top: -3px;
 }
 
@@ -477,12 +480,20 @@ footer .current-song img {
     .cards {
         width: calc(100% / 4 - 1rem);
     }
+
+    .large-length::after {
+        left: 100px;
+    }
 }
 
 /* Layout Tablet (700px) */
 @media screen and (max-width: 700px) {
     .cards {
         width: calc(100% / 2 - 1rem);
+    }
+
+    .large-length::after {
+        left: 60px;
     }
 }
 
@@ -528,5 +539,9 @@ footer .current-song img {
         width: 20px;
         padding: .3rem 0;
         opacity: .5;
+    }
+
+    .large-length::after {
+        left: 50px;
     }
 }
