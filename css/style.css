@@ -429,7 +429,7 @@ footer .current-song img {
 }
 
 .small-length {
-    width: 100px;
+    max-width: 100px;
     position: relative;
 }
 
